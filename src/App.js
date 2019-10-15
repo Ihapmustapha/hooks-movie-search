@@ -84,12 +84,14 @@ const App = () => {
         ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
         ) : movies ? (
-          movies.map((movie, index) => (
-            <Movie
-              key={`key-${movie.Title}-${movie.Year}`}
-              movie={movie}
-            ></Movie>
-          ))
+          <div className="movies-container">
+            {movies.map((movie, index) => (
+              <Movie
+                key={`key-${movie.Title}-${movie.Year}`}
+                movie={movie}
+              ></Movie>
+            ))}
+          </div>
         ) : null}
       </div>
     </div>

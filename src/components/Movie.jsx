@@ -9,12 +9,10 @@ const Movie = ({ movie }) => {
 
   return (
     <div className="movie">
-      <div>
-        <img width="200" src={poster} alt={`The movie titled ${movie.Title}`} />
-        <p>
-          {movie.Title} ({movie.Year})
-        </p>
-      </div>
+      <img width="200" src={poster} alt={`The movie titled ${movie.Title}`} />
+      <p>
+        {movie.Title} ({movie.Year})
+      </p>
     </div>
   );
 };
