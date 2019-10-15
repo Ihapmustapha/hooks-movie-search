@@ -22,6 +22,10 @@
   color: #09d3ac;
 }
 
+.App-intro {
+  font-weight: 700;
+}
+
 .movies-container {
   display: flex;
   flex-direction: row;
@@ -43,4 +47,19 @@
 
 .movie:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.search-input {
+  border: none;
+  background-color: #e5e5e5;
+  color: black;
+  margin-top: 20px;
+  height: 30px;
+  width: 250px;
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+.search-input:focus {
+  outline: none;
 }
